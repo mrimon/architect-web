@@ -162,10 +162,45 @@ img {
   width: 45px;
   height: 45px;
 }
+
+
+/* sponsors style  */
+.sponsors-container {
+  margin: 130px 0;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.sponsor-description {
+  margin: 24px 0 50px; 
+}
+.sponsors {
+  justify-content: space-between;
+}
+.sponsor img {
+  filter: grayscale(100%);
+  max-width: 165px;
+  height: 50px;
+}
+footer {
+  margin-bottom: 210px;
+}
+.footer {
+  background: #FFF4E7;
+  text-align: center;
+  padding: 40px 0;
+  border-radius: 8px;
+}
+
+
 /* media query style */
 
 @media screen and (max-width: 576px){
   /* header responsive */
+  .header-container {
+    margin:30px 33px;
+  }
   .navbar,
   .nav-links {
     flex-direction: column;
@@ -179,14 +214,50 @@ img {
   /* teams responsive  */
   .teams {
     flex-direction: column;
+    
     margin: 30px 30px;
   }
 
   .team-img-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  
+  .team-feature-container {
+    justify-content: center;
+    text-align: center;
+  }
+  /* some fact responsive  */
+  .fact-content {
+    margin: 50px 30px;
+    justify-content: center;
+    text-align: center;
+  }
+  .fact-card {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 24px;
+    margin: 0 30px;
+  }
+  .card {
+    width: 100%;
+  }
+
+  /* sponsor responsive */
+  .sponsors-container {
+    margin: 130px 33px;
+  }
+  .sponsors {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .sponsor img {
+    width: 100%;
+  }
 }
+/* footer responsive  */
+.footer {
+  margin: 0 33px;
+}
+
 
 /* medium device responsive */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -204,5 +275,22 @@ img {
   }
   .team-feature {
     text-align: center;
+  }
+  /* some fact responsive */
+  .fact-content, 
+  .fact-card {
+    margin: 50px 33px;
+  }
+  .fact-card {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 24px;
+  }
+  .card {
+    width: 100%;
+  }
+  .sponsors {
+    flex-direction: column;
+    gap: 24px;
   }
 }
