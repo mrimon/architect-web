@@ -271,8 +271,12 @@ footer {
     margin: 0 30px;
   }
   #feature-badge {
-    margin-left: 0;
+    margin-left: 30px;
     margin-top: 20px;
+  }
+  #jambu-text {
+    font-size: 3rem;
+    
   }
   /* some fact responsive  */
   .fact-content {
