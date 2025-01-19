@@ -271,7 +271,7 @@ footer {
     margin: 0 30px;
   }
   #feature-badge {
-    margin-left: 60px;
+    margin-left: 0;
     margin-top: 20px;
   }
   /* some fact responsive  */
@@ -309,7 +309,7 @@ footer {
 
 
 /* medium device responsive */
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   /* header reponsive  */
   .navbar {
     margin: 0 30px;
