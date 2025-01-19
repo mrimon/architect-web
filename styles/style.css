@@ -161,16 +161,12 @@ img {
 .feature img {
   height: auto;
 }
-.feature-img {
-  position: relative;
 
-}
-
-.features button {
+#feature-badge {
   padding: 45px 42px;
-  position: absolute;
-  left: -92px;
-  bottom: 10px;
+  margin-left: -92px;
+  margin-top: -43px;
+
 }
 #jambu-text {
   font-size: 4rem;
@@ -269,6 +265,15 @@ footer {
     justify-content: center;
     text-align: center;
   }
+  /* features section responsive  */
+  .features {
+    flex-direction: column;
+    margin: 0 30px;
+  }
+  #feature-badge {
+    margin-left: 60px;
+    margin-top: 20px;
+  }
   /* some fact responsive  */
   .fact-content {
     margin: 50px 30px;
@@ -320,10 +325,25 @@ footer {
   .team-feature {
     text-align: center;
   }
+  /* features section responsive  */
+  .features {
+    flex-direction: column;
+    margin: 0 30px;
+  }
+  .feature-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  #feature-badge {
+    margin-left: 220px;
+    margin-top: 20px;
+  }
   /* some fact responsive */
   .fact-content, 
   .fact-card {
     margin: 50px 33px;
+    text-align: center;
   }
   .fact-card {
     grid-template-columns: repeat(2, 1fr);
